@@ -1,16 +1,16 @@
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <title>Твой Дом. Агентство недвижимости</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
   <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,33 +19,31 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.js"></script>
   <![endif]-->
 
-  <meta charset="utf-8">
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <a class="btn btn-dark btn-lg toggle sidebar-toggle" id="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
   <nav id="sidebar-wrapper">
+    <a id="menu-close" class="btn btn-light btn-lg pull-right toggle " href="#" style="position: relative; z-index: 1;"><i class="fa fa-times"></i></a>
     <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
       <li class="sidebar-brand">
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location="#top"">Агентство
+        <a class="btn-link sidebar-toggle" href="#top">Агентство</a>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location="#top"">Главная
+        <a class="btn-link sidebar-toggle" href="#top">Главная</a>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">О нас
+        <a class="btn-link sidebar-toggle" href="#about">О нас</a>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">Услуги
+        <a class="btn-link sidebar-toggle" href="#services">Услуги</a>
       </li>
-      <!-- <li>
-        <a href="#portfolio" onclick = $("#menu-close").click(); >Портфолио</a>
-      </li> -->
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#contact'">Контакты
+        <a class="btn-link sidebar-toggle" href="#office-location">Наш офис</a>
+      </li>
+      <li>
+        <a class="btn-link sidebar-toggle" href="#contact">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -54,7 +52,7 @@
   <header id="top" class="header">
     <div class="text-vertical-center">
       <div style="margin: 0; padding: 0; font-size: 4.5em; font-weight: 700;">Твой Дом</div>
-      <div style="margin-top: 20;margin-bottom: 10;font-weight: 500; font-size: 24">Агентство недвижимости</div>
+      <div style="margin-top: 20px;margin-bottom: 10px;font-weight: 500; font-size: 24px">Агентство недвижимости</div>
       <br>
       <a href="#about" class="btn btn-dark btn-lg">Узнать больше >></a>
     </div>
@@ -66,7 +64,8 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2>Квартира вашей мечты!</h2>
-          <p class="lead">Дом там, где сердце. Мы поможем вам и вашей компании найти место, где вы будете чувствовать себя дома.<br>Покупка или продажа — мы то, что вам нужно.</p>
+          <p class="lead">Дом там, где сердце. Мы поможем вам и вашей компании найти место, где вы будете чувствовать себя дома.<br>Покупка
+            или продажа — мы то, что вам нужно.</p>
         </div>
       </div>
       <!-- /.row -->
@@ -75,11 +74,10 @@
   </section>
 
   <!-- Services -->
-  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
   <section id="services" class="services bg-primary">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-12">
           <h2>Наши услуги</h2>
           <hr class="small">
           <div class="row">
@@ -102,7 +100,7 @@
                   <i class="fa fa-file fa-stack-1x text-primary"></i>
                 </span>
                 <h4>
-                  <strong>Договора</strong>
+                  <strong>Договоры</strong>
                 </h4>
                 <p>Составление договоров, подготовка пакета документов к гос.регистрации, комфортное сопровождение сделок</p>
               </div>
@@ -116,8 +114,7 @@
                 <h4>
                   <strong>Консультации</strong>
                 </h4>
-                <p>Всегда бесплатное консультирование по телефону +7 (999) 999-99-99
-                 ведущим специалистом</p>
+                <p>Всегда бесплатное консультирование по телефону +7 (999) 999-99-99 ведущим специалистом</p>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
@@ -143,58 +140,39 @@
   </section>
 
   <!-- Map -->
-  <section id="contact">
-    <div id="map" class="map" style="width: 100%; height: 100%"></div>
-
-
-    <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-12">
-      <div style="font-size: 30; margin-top: 40; margin-bottom: 20;">Наш офис</div>
-      <img src="img/office place.jpg" width="600" class="img-rounded center-block">
+  <section id="office-location">
+    <div class="map" id="YMapsID" style="width: 100%"></div>
+    <div class="container" style="padding-top:100px;">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>Наш офис</h2>
+          <img class="img-rounded center-block" alt="Фото" src="img/office%20place.jpg" width="600">
+        </div>
       </div>
     </div>
-    </div>
   </section>
-
-
-  <script type="text/javascript">
-    ymaps.ready(init);
-    function init(){
-      var map = new ymaps.Map("map", {
-        center: [55.740684, 37.618174],
-        zoom: 15
-      });
-      map.behaviors.disable('scrollZoom');
-      placemark = new ymaps.Placemark([55.740684, 37.618174], {
-        hintContent: 'Твой Дом',
-        balloonContentHeader: 'Твой Дом',
-        balloonContentBody: 'Москва, Старомонетный переулок, 10'
-      });
-      map.geoObjects.add(placemark);
-    }
-  </script>
 
   <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center" id="contact">
-          <h4><strong>Твой Дом</strong>
+        <div class="col-lg-12 col-lg-offset-1 text-center" id="contact">
+          <h4>
+            <strong>Твой Дом</strong>
           </h4>
           <p>г. Москва<br>Старомонетный переулок, 10</p>
           <ul class="list-unstyled">
-            <li><i class="fa fa-phone fa-fw"></i> +7 (999) 999-99-99</li>
-            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">test@example.com</a>
+            <li><i class="fa fa-phone fa-fw" style="padding-right: 3px"></i>+7 (999) 999-99-99</li>
+            <li><i class="fa fa-envelope-o fa-fw" style="padding-right: 10px"></i><a href="mailto:test@example.com">test@example.com</a>
             </li>
           </ul>
           <br>
           <ul class="list-inline">
-            <li>
-              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></a></i>
+            <li class="list-inline-item">
+              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></i></a>
             </li>
-            <li>
-              <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></a></i>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa fa-link fa-fw fa-3x"></i></a>
             </li>
           </ul>
         </div>
@@ -202,38 +180,16 @@
     </div>
   </footer>
 
-
-  <!-- Custom Theme JavaScript -->
-  <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/ymaps.js"></script>
+  <script src="js/slidebar.js"></script>
+  <script src="js/scroll.js"></script>
 
 </body>
 
