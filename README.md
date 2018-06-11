@@ -1,6 +1,5 @@
 # Site of Real Estate Agency
-
-[TODO. There will be project description]
+Real estate agency website. Link: https://kporcelainluv.github.io/21_valid_markup/
 
 # Project Goals
 
